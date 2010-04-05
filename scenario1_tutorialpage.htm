@@ -1,0 +1,210 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" id="mysite-com">
+
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Git for Writers: Scenario 1</title>
+	
+	<link rel="stylesheet" type="text/css" media="screen, print" href="css/reset.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="css/screen.css" />
+	<!--[if lte IE 7>
+	<link rel="stylesheet" type="text/css" media="screen" href="css/screen-ie.css" />
+	<![endif]-->
+	<link rel="stylesheet" type="text/css" media="print" href="css/print.css" />
+	
+<!--REMOVE COMMENT TAGS TO USE FACEBOOK SHARE METADATA:-->
+	
+<!--
+	<meta name="title" content="Match this with the content of the title tag above." /> 
+	<meta name="description" content="A short description of this page." />
+	<link rel="image_src" href="http://example.com/media/share/thumbnail.jpg" /> 
+-->
+
+<!--REMOVE COMMENT TAGS TO USE FAVICON LINKS:-->
+
+<!--
+	<link rel="icon" href="" type="image/png" /> 
+	<link rel="shortcut icon" href="" type="image/png" /> 
+-->
+
+	<script type="text/javascript" src="js/mootools/mootools-core.js"></script>
+	<script type="text/javascript" src="js/site.js"></script>
+	
+</head>
+
+<body>
+
+<div id="page">
+		
+	<div id="header">
+		
+		<h1><a href="http://gewga.ws/git-for-writers/" rel="home">Git for Writers</a></h1>
+		
+		<p class="tagline">
+			A guide to version tracking, revision, and collaboration for open-source writing.
+		</p>
+		
+		<ul class="accessibility">
+			<li><a href="#navigation">Jump to Navigation</a></li>
+			<li><a href="#content">Jump to Content</a></li>
+		</ul>
+	
+	</div>
+		
+	<div id="content">
+	
+		<div id="main">
+			<h2>Scenario 1: Developing a course syllabus</h2>
+		</div>
+		<div id="content">
+			<h3>Scenario description</h3>
+			<p>You are the new instructor of an undergraduate technical writing course to be offered in an upcoming semester. Over the next six weeks, you want to develop the course syllabus, which will be uploaded to the course Web site as an HTML document. The syllabus sections will be added iteratively and include:
+				<ul>
+					<li>Course overview, objectives
+					<li>Readings/assignments calendar</li>
+					<li>Grading, project requirements</li>
+					<li>University policies</li>
+				</ul>
+			</p>
+			<h4>Week one</h4>
+				<div class="img">
+ 					<img src="/media/img/scenario1_figure1.png" width="350" height="593" /></a>
+  					<div class="desc">Figure 1</div>
+				</div>
+			<h3>Create new document & syllabus outline</h3>
+			<ol>
+				<li>Creating an HTML document for the syllabus
+					<ol>
+						<li>You've already completed <a href="">Git Setup</a>.</li>
+						<li>You <a href="">Create a New Project</a> in the <em>projects</em> folder of the home directory.
+						<li>You create and save a new HTML file COM104_syllabus.htm in the <em>projects</em> folder.</li>
+						<li>You copy a CSS file you had used for another course and save it in the <em>projects</em> folder as syllabi.css.</li>
+						<li>You work for 30 minutes on the outline and appearance of the COM104_syllabus.htm document until it looks like <strong>Figure 1</strong>. 
+					</ol>
+				</li>
+				<li>Saving to a repository</li>
+					<ol>
+						<li>Since you now have two files to be saved to a repository, you <a href="common_commands.html/#init">Initialize a Repository</a> for <em>com104</em> and <a href="common_commands.html/#stage">Stage a Commit</a> for them.
+						<li>Next, you <a href="common_commands.html/#commit">Make a Commit</a> to save your project's working copy with in the <em>com104</em> repository.</li>
+					</ol>
+			</ol>
+			<h4>Week two</h4>
+				<div class="img">
+  					<img src="/media/img/scenario1_figure2.png"/>
+ 					<div class="desc">Figure 2</div>
+				</div>
+			<h3>Add course calendar outline & grading scale</h3>
+			<ol>
+				<li>Updating existing documents
+					<ol>
+						<li>You add a calendar table under the Course Calendar section and a grading scale table under the Grading & Project Requirements section of COM104_syllabus.htm. The syllabus now looks like <strong>Figure 2</strong>.</li>
+						<li>You <a href="common_commands.html/#commit">Make a Commit</a> to match your project's working copy with the <em>com104</em> repository copy.</li>					</ol>
+				</li>
+				<li>Branching sideways to preserve current version
+					<ol>
+						<li>To preserve the current document as a form for other syllabi in the future, you decide to "branch sideways," or <a href="common_commands.html/#init">Initialize a Repository</a> called <em>courses</em> for the files and <a href="common_commands.html/#stage">Stage a Commit</a> for them.</li>
+						<li>You then <a href="common_commands.html/#commit">">Make a Commit</a> to match the working copy to the new <em>courses</em> repository.</li>
+					</ol>
+				</li>
+			</ol>
+			<h4>Week three</h4>
+			<h3>Flesh out calendar & add course objectives</h3>
+			<ol>
+				<li>Updating existing documents
+					<ol>
+						<li>You add some of the assigned readings and in-class exercises to the calendar table and finish the course objectives. The syllabus now looks like <strong>Figure 3</strong>.</li>
+						<li>You <a href="common_commands.html/#commit">Make a Commit</a> to match your project's working copy of COM104_syllabus.htm to the <em>com104</em> repository copy.</li>
+					</ol>
+				</li>
+				<li>Reviewing document history
+					<ol>
+						<li>Before moving on to other work, you want to review all of the changes you made to the document today.</li>
+						<li>You...</li>
+					</ol>
+				</li>
+			</ol>
+			<h4>Week four</h4>
+			<h3>Update university policies & make consistent with course objectives</h3>
+			<ol>
+				<li>Updating existing documents
+					<ol>
+						<li></li>
+						<li></li>
+					</ol>
+				</li>
+				<li>Adding select update to other branch
+					<ol>
+						<li>You want to add the updated university policies to the syllabus document in the <em>courses</em> branch.</li>
+					</ol>
+				</li>
+			</ol>
+			<h4>Week five</h4>
+			<h3>Finish calendar & project requirements</h3>
+			<ol>
+				<li>Updating existing documents
+					<ol>
+						<li></li>
+						<li></li>
+					</ol>
+				</li>
+				<li>Rolling back last week's changes to course objectives
+					<ol>
+						<li>You realize that course objectives should be more consistent with the course calendar and not the university policies, so you want to restore the previous version of the text.</li>
+					</ol>
+				</li>
+			</ol>
+			<h4>Week six</h4>
+			<h3>Finish course description & make final edits</h3>
+			<ol>
+				<li>Updating existing documents
+					<ol>
+						<li></li>
+						<li></li>
+					</ol>
+				</li>
+				<li>Accepting only some of the textual and formatting changes
+					<ol>
+						<li>Cherry pick to accept some textual and formatting changes, but reject others.</li>
+					</ol>
+				</li>
+			</ol>
+		</div>
+		<div id="supporting">
+		</div>
+	
+	</div>
+		
+	<ul id="navigation">
+		<li><a href="index.htm">Home</a></li>
+		<li><a href="resources.htm">Resources</a></li>
+		<li><a href="about.htm">About</a></li>
+	</ul>
+
+	<div id="footer">
+		<p class="copyright">
+			© 2010 by Gewgaws Lab. Some rights reserved. Content licensed under a 
+			<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/us/">
+				Creative Commons Attribution-Share Alike 3.0 United States License
+			</a>.
+			<a class="cc-badge" rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/us/">
+				<img alt="Creative Commons License" src="http://i.creativecommons.org/l/by-sa/3.0/us/88x31.png" />
+			</a>
+		</p>
+		<p class="project-information">
+			<a href="http://github.com/gewgaws/git-for-writers">Git for Writers repository</a> 
+			hosted at <a href="http://github.com">GitHub</a>. Learn <a href="participate.htm">how to 
+			contribute</a> to Git for Writers.
+		</p>
+		<ul class="validators">
+			<li><a href="http://validator.w3.org/check?uri=referer" title="Validate this page's XHTML">XHTML</a></li>
+			<li><a href="http://jigsaw.w3.org/css-validator/check/referer" title="Validate this page's CSS">CSS</a></li>
+		</ul>
+	</div>
+
+</div>
+
+</body>
+
+</html>
+
